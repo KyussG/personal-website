@@ -5,10 +5,10 @@
 	<circle stroke="#f6f9f9" stroke-width="0.666" fill="transparent" cx="12" cy="12" r="10" />
 </g>
 <g> <!-- K -->
-	<path stroke="red" d="
+	<!--<path stroke="red" d="
 		M 4,0
 		L 4,24
-	" />
+	" />-->
 </g>
 <g> <!-- G -->
 
