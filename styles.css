@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #f6f9f9;
+	font-family: 'Roboto', 'Roboto Slab', 'Arial', 'Helvetica', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
+
+body {
+	background-color: #006969;
+	background: linear-gradient(45deg, #003535, #006969, #009696);
+	background-size: 300% 300%;
+	-webkit-animation: gradient 30s linear infinite alternate;
+	-o-animation: gradient 30s linear infinite alternate;
+	-moz-animation: gradient 30s linear infinite alternate;
+	animation: gradient 30s linear infinite alternate;
+}
+
+/* Name & Titles */
+
+.banner {
+	margin: 25vh 0;
+	text-align: center;
+}
+
+.name img {
+	margin-right: 2vw;
+	width: 70px;
+	vertical-align: text-top;
+}
+
+.name {
+	font-family: 'Roboto Slab', 'Roboto', 'Helvetica', 'Arial', serif;
+	font-size: 3rem;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.titles {
+	margin-top: 2.5vh;
+}
+
+.titles a {
+	margin: 0 2vw;
+	opacity: 0;
+	color: #d6d9d9;
+	font-size: 1.25rem;
+	text-decoration: none;
+
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.titles a:hover {
+	color: #f6f9f9;
+}
+
+.titles a:focus {
+	outline: none;
+	border: none;
+
+	color: #f6f9f9;
+	text-decoration: underline;
+}
+
+.titles a:active {
+	color: #f6f9f9;
+}
+
+.t-one {
+	-webkit-animation: fade-in 1s ease-in-out 0.25s;
+	-o-animation: fade-in 1s ease-in-out 0.25s;
+	-moz-animation: fade-in 1s ease-in-out 0.25s;
+	animation: fade-in 1s ease-in-out 0.25s;
+}
+.t-two {
+	-webkit-animation: fade-in 1s ease-in-out 0.5s;
+	-o-animation: fade-in 1s ease-in-out 0.5s;
+	-moz-animation: fade-in 1s ease-in-out 0.5s;
+	animation: fade-in 1s ease-in-out 0.5s;
+}
+.t-three {
+	-webkit-animation: fade-in 1s ease-in-out 0.75s;
+	-o-animation: fade-in 1s ease-in-out 0.75s;
+	-moz-animation: fade-in 1s ease-in-out 0.75s;
+	animation: fade-in 1s ease-in-out 0.75s
+}
+.t-four {
+	-webkit-animation: fade-in 1s ease-in-out 1s;
+	-o-animation: fade-in 1s ease-in-out 1s;
+	-moz-animation: fade-in 1s ease-in-out 1s;
+	animation: fade-in 1s ease-in-out 1s
+}
+
+/* Socials */
+
+.socials {
+	margin: 0 16vw;
+	width: 66.666vw;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+.socials img {
+	display: inline;
+	height: 7.5vh;
+	margin: 1vw;
+	vertical-align: middle;
+}
+
+@media (orientation: portrait) {
+	.banner {
+		margin: 15vh 0;
+	}
+
+	.titles a::after {
+		content: "\a\a";
+		white-space: pre;
+	}
+
+	.socials img {
+		display: inline;
+		height: 7.5vw;
+		margin: 1vw;
+		vertical-align: middle;
+	}
+}
