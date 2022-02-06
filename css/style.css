@@ -6,7 +6,20 @@
 	color: #f6f9f9;
 	font-family: 'Roboto', 'Roboto Slab', 'Arial', 'Helvetica', sans-serif;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
+
+#particles-js{
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #006969;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+  }
 
 @keyframes gradient {
 	0% {
@@ -19,12 +32,12 @@
 
 body {
 	background-color: #006969;
-	background: linear-gradient(45deg, #003535, #006969, #009696);
+	/* background: linear-gradient(45deg, #003434, #006969, #009696);
 	background-size: 300% 300%;
 	-webkit-animation: gradient 30s linear infinite alternate;
 	-o-animation: gradient 30s linear infinite alternate;
 	-moz-animation: gradient 30s linear infinite alternate;
-	animation: gradient 30s linear infinite alternate;
+	animation: gradient 30s linear infinite alternate; */
 }
 
 /* Name & Titles */
